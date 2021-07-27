@@ -41,34 +41,97 @@ section {
       font-size: .75rem;
       font-weight: 500; }
     section .article-container #shareBox .share {
-      background-color: #ecf2f8;
       border-radius: 50%;
       cursor: pointer; }
-    section .article-container #shareBox .social-network {
-      background-color: #48556a;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      position: absolute;
-      top: -54px;
-      right: -70px; }
-      section .article-container #shareBox .social-network::after {
-        content: '';
+    section .article-container #shareBox .social-network-box {
+      display: none; }
+      section .article-container #shareBox .social-network-box .social-network {
+        background-color: #48556a;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
         position: absolute;
-        top: 100%;
-        margin-left: 56px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: #48556a transparent transparent transparent; }
-      section .article-container #shareBox .social-network span {
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-right: .80rem; }
-      section .article-container #shareBox .social-network img {
-        width: 13px;
-        height: 13px; }
-      section .article-container #shareBox .social-network a:not(:last-child) {
-        margin-right: .70rem; }
+        top: -54px;
+        right: -70px; }
+        section .article-container #shareBox .social-network-box .social-network::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          margin-left: 56px;
+          border-width: 7px;
+          border-style: solid;
+          border-color: #48556a transparent transparent transparent; }
+        section .article-container #shareBox .social-network-box .social-network span {
+          font-size: 11px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          margin-right: .80rem; }
+        section .article-container #shareBox .social-network-box .social-network img {
+          width: 13px;
+          height: 13px; }
+        section .article-container #shareBox .social-network-box .social-network a:not(:last-child) {
+          margin-right: .70rem; }
+
+.share-light {
+  background-color: #ecf2f8; }
+
+.share-active {
+  background-color: #6d7f97; }
+
+@media screen and (max-width: 767px) {
+  .change-pos {
+    top: 11px; }
+
+  section {
+    width: 300px; }
+    section .img-container {
+      height: 200px;
+      background-size: 100% 120%;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px; }
+    section .article-container {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
+      section .article-container .avatar img {
+        width: 35px; }
+      section .article-container .avatar h6 {
+        font-size: .65rem; }
+      section .article-container .avatar span {
+        font-size: .55rem; }
+      section .article-container #shareBox {
+        z-index: 10; }
+        section .article-container #shareBox .share {
+          position: relative;
+          z-index: 10; }
+        section .article-container #shareBox .social-network-box .social-network {
+          width: 300px;
+          top: 0;
+          right: -24px;
+          padding-top: 0.85rem;
+          padding-bottom: 0.85rem;
+          border-radius: 0px;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px; }
+          section .article-container #shareBox .social-network-box .social-network::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            margin-left: 56px;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent transparent transparent transparent; }
+          section .article-container #shareBox .social-network-box .social-network span {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-right: .80rem; }
+          section .article-container #shareBox .social-network-box .social-network img {
+            width: 13px;
+            height: 13px; }
+          section .article-container #shareBox .social-network-box .social-network a:not(:last-child) {
+            margin-right: .70rem; }
+    section h1 {
+      font-size: 1rem; } }
 
 /*# sourceMappingURL=styles.css.map */
